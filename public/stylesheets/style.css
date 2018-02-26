@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+input {
+  width: 100px;
+}
+a {
+  text-decoration: none;
+  color: #00B7FF;
+}
+button {
+  color: #00B7FF;
+  font-size: 20px;
+  width: 160px;
+  text-align: left;
+}
+li {
+  font-size: 25px;
+  margin: 20px;
+  text-align: left;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,9 @@
+<h1>Characters</h1>
+
+<ul>
+  {{#each char}}
+    <li><a href="/char/{{_id}}" >{{name}}</a></li>
+  {{/each}}
+</ul>
+
+<button type="submit"><a href="/char/new">New Character</a></button>

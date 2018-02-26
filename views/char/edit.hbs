@@ -1,0 +1,22 @@
+<h1>Edit {{char.name}}</h1>
+<form method="POST" action="/char/{{id}}?_method=PATCH">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" name="name" value="{{char.name}}">
+  </div>
+  <div>
+    <label for="age">Age</label>
+    <input type="number" name="age" value="{{char.age}}">
+  </div>
+  <div>
+    <label for="deity">Deity</label>
+    <input type="text" name="deity" value="{{char.deity}}">
+  </div>
+  <div>
+    <label for="alignment">Alignment</label>
+    <input type="text" name="alignment" value="{{char.alignment}}">
+  </div>
+  
+  <button type="submit">Save</button>
+
+<button type="submit"><a href="/char/{{id}}">Back to {{char.name}}</a></button>

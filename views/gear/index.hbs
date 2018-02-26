@@ -1,0 +1,15 @@
+<h1>{{char.name}}'s Gear</h1>
+
+{{#each gear}}
+  <div>
+    <a href="/char/{{../char._id}}/gear/{{id}}">{{name}}</a>
+  </div>
+  <ul>
+    <li>{{att}} Attack</li>
+    <li>{{spec}} Special</li>
+  </ul>
+{{/each}}
+
+<button type="submit"><a href="/char/{{char._id}}/gear/new">New Item</a></button>
+<br>
+<button type="submit"><a href="/char/{{char._id}}">Back</a></button>
