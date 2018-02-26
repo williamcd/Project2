@@ -1,10 +1,10 @@
-<h1>{{char.name}}</h1>
+<h1>{{gear.name}}</h1>
 
 <p>{{gear.att}}</p>
 <p>{{gear.spec}}</p>
 
-<a href="/char/{{char._id}}/gear/{{id}}/edit">Edit {{gear.name}}</a>
+<button type="submit"><a href="/char/{{charId}}/gear/{{id}}/edit">Edit {{gear.name}}</a></button>
 
-<form method="POST" action="/char/{{char._id}}/gear/{{gear._id}}?_method=DELETE">
+<form method="POST" action="/char/{{charId}}/gear/{{gearId}}?_method=DELETE">
   <button type="submit">Delete This Item</button>
 </form>

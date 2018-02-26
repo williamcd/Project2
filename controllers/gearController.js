@@ -39,6 +39,7 @@ router.get('/:id', (req, res) => {
   Char.findById(req.params.id).then((char) => {
     res.render('gear/show', {
       char: char,
+      gear: char.gear.id(req.params.id)
     })
   })
 })

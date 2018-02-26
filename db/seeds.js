@@ -40,6 +40,11 @@ const axe = new Gear({
   att: 160,
   spec: 7
 })
+const uggs = new Gear({
+  name: 'Uggs',
+  att: 2,
+  spec: 100
+})
 const will = new Char({
   name: 'Will',
   age: 21,
@@ -52,7 +57,7 @@ const james = new Char({
   age: 62,
   deity: 'Home Depot',
   alignment: 'Communist',
-  gear: [axe]
+  gear: [uggs]
 })
 
 Gear.remove().then(() => {
