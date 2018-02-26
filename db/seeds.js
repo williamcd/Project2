@@ -23,26 +23,31 @@ mongoose.connection.once('open', function() {
 const sword = new Gear({
   name: 'Sword',
   att: 100,
+  def: 3,
   spec: 10
 })
 const spear = new Gear({
   name: 'Spear',
   att: 140,
+  def: 4,
   spec: 8
 })
 const bow = new Gear({
   name: 'Bow & Arrow',
   att: 240,
+  def: 0,
   spec: 4
 })
 const axe = new Gear({
   name: 'Axe',
   att: 160,
+  def: 1,
   spec: 7
 })
 const uggs = new Gear({
   name: 'Uggs',
   att: 2,
+  def: 100,
   spec: 100
 })
 const will = new Char({

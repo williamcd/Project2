@@ -1,10 +1,12 @@
 <h1>{{gear.name}}</h1>
 
-<p>{{gear.att}}</p>
-<p>{{gear.spec}}</p>
+<p>Attack: {{gear.att}}</p>
+<p>Defense: {{gear.def}}</p>
+<p>Special: {{gear.spec}}</p>
 
-<button type="submit"><a href="/char/{{charId}}/gear/{{id}}/edit">Edit {{gear.name}}</a></button>
+<button type="submit"><a href="/char/{{char._id}}/gear/{{gear.id}}/edit">Edit {{gear.name}}</a></button>
 
-<form method="POST" action="/char/{{charId}}/gear/{{gearId}}?_method=DELETE">
+<form method="POST" action="/char/{{char._id}}/gear/{{gear.id}}?_method=DELETE">
   <button type="submit">Delete This Item</button>
 </form>
+<button type="submit"><a href="/char/{{char._id}}/gear">Back</a></button>

@@ -52,7 +52,7 @@ const gearController = require('./controllers/gearController')
 
 app.use('/', index)
 app.use('/char', charController)
-app.use('/char/:id/gear', gearController)
+app.use('/char/:charId/gear', gearController)
 
 app.use(function (req, res, next) {
   const err = new Error('Not Found')

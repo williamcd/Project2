@@ -1,5 +1,5 @@
 <h1>Edit Item</h1>
-<form method="POST" action="/char/{{charId}}/gear/{{gear._id}}?_method=PATCH">
+<form method="POST" action="/char/{{char.id}}/gear/{{gear._id}}?_method=PATCH">
  <div>
     <label for="name">Name of Item</label>
     <input type="text" name="name" value="{{gear.name}}">
@@ -13,8 +13,8 @@
     <input type="text" name="spec" value="{{gear.spec}}">
   </div>
   
-  <button type="submit">Edit Item</button>
+  <button type="submit">Save</button>
   
 
 </form>
-<a href="/char/{{charId}}/gear/{{gear._id}}">Go Back</a>
+<button type="submit"><a href="/char/{{char.id}}/gear/{{gear._id}}">Go Back</a></button>
