@@ -21,3 +21,6 @@
   <br>
   <button type="submit"><a href="/char/{{id}}">Back to {{char.name}}</a></button>
 </form>
+<form action="/char/{{char.id}}?_method=DELETE" method="post">
+  <button type="submit">Delete {{char.name}}</button>
+</form>

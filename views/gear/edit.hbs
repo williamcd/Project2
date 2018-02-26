@@ -18,3 +18,6 @@
 
 </form>
 <button type="submit"><a href="/char/{{char.id}}/gear/{{gear._id}}">Go Back</a></button>
+<form method="POST" action="/char/{{char._id}}/gear/{{gear.id}}?_method=DELETE">
+  <button type="submit">Delete This Item</button>
+</form>
